@@ -1,4 +1,4 @@
-package com.donegel.blockchain;
+package com.donegel.blockchain.utils;
 
 import java.security.MessageDigest;
 

@@ -1,5 +1,6 @@
 package com.donegel.blockchain;
 
+import com.donegel.blockchain.utils.Utils;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,10 +13,10 @@ public class Block {
 
 	private int index;
 	private long timestamp;
-	private String hash;
 	private String previousHash;
 	private String data;
 	private int nonce;
+	private String hash;
 
 	public Block(int index, long timestamp, String previousHash, String data) {
 		this.index = index;

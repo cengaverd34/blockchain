@@ -1,11 +1,16 @@
 package com.donegel.blockchain;
 
+import com.donegel.blockchain.utils.Utils;
+
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Blockchain {
 
 	private int difficulty;
+
 	private List<Block> blocks = new ArrayList<>();
 
 	public Blockchain(int difficulty) {
@@ -17,7 +22,7 @@ public class Blockchain {
 		return new Block(0, System.currentTimeMillis(), null, "");
 	}
 
-	public Block lastBlock() {
+	private Block lastBlock() {
 		return blocks.get(blocks.size() - 1);
 	}
 
